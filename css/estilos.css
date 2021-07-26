@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+
+body {
+  background-image: url(../media/background.jpg);
+  font-family: "Rubik", sans-serif;
+}
+
+/* Barra de Navegacion*/
+
+header {
+  width: 100%;
+  background: linear-gradient(to left, #ffff, #f38888);
+}
+
+#btnMenu {
+  display: none;
+}
+
+header label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-right: 1px solid #fff;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+menu li:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: rgb(0, 0, 0);
+  transform: scale(120%, 120%);
+}
+
+/* Titulos */
+
+h1 {
+  color: #333333;
+  font-size: 30pt;
+  display: inline-block;
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h2 {
+  color: #5e2f2f;
+  font-size: 25pt;
+  font-style: italic;
+  letter-spacing: 2pt;
+  text-transform: uppercase;
+  margin: 20px 30px;
+}
+
+h3 {
+  color: #313235;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+h4 {
+  font-size: 15pt;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+
+iframe,
+video {
+  margin: 30px 50px;
+}
+
+/* Index */
+
+.slideshow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px;
+  padding: 5px;
+}
+
+.slideshow img {
+  border-radius: 10px;
+  width: 300px;
+  height: auto;
+}
+
+.slideshow img:hover {
+  transform: scale(120%, 120%);
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.redes div {
+  background-color: #f7e4e4;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.insumos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.insumos img {
+  width: 150px;
+  height: 150px;
+}
+
+.insumosArt {
+  margin: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+form {
+  margin-left: 60px;
+}
+
+/* Tienda */
+
+.miProducto {
+  margin: 15px;
+  padding: 10px;
+}
+
+article p {
+  font-size: 12pt;
+  text-align: justify;
+  line-height: auto;
+  margin-top: 15px;
+}
+
+.tienda {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: auto;
+}
+
+.tienda .item {
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgRedux {
+  width: 250px;
+  height: auto;
+}
+/* Insumos*/
+
+.cajasArticulo {
+  display: grid;
+  grid-template-areas:
+    "foto foto"
+    "prod prod"
+    "foto foto"
+    "prod prod";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 4vh;
+  grid-column-gap: 2vh;
+}
+
+.imgVela {
+  max-width: 100%;
+  height: auto;
+  grid-area: foto;
+  border-radius: 15px;
+  margin: 2vh;
+}
+
+.product {
+  grid-area: prod;
+  text-align: justify;
+  max-width: 90%;
+  margin: 2vh;
+}
+
+/* Blog */
+
+.cajasBlog {
+  display: flex;
+  flex-direction: column;
+}
+
+.cajasBlog article {
+  margin: 15px;
+  padding: 15px;
+}
+
+/* Footer */
+
+.logoFooter {
+  margin-left: 50px;
+  width: 50px;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+@media (max-width: 414px) {
+  header label {
+    display: block;
+  }
+
+  header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  menu li:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .menu li a:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .menu {
+    position: absolute;
+    background: #f38888;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li {
+    border-top: 1px solid #fff;
+  }
+
+  #btnMenu:checked ~ .menu {
+    margin: 0;
+  }
+
+  /* Titulos */
+
+  h2 {
+    color: #5e2f2f;
+    font-size: 12pt;
+    font-style: italic;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    margin: 20px 30px;
+  }
+
+  h3 {
+    color: #313235;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+
+  h4 {
+    font-size: 10pt;
+    margin-left: 30px;
+    margin-bottom: 25px;
+  }
+
+  .slideshow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 5px;
+  }
+
+  .slideshow img {
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+  }
+
+  .insumos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .insumos img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .imgVela {
+    max-width: 90%;
+    height: auto;
+    grid-area: foto;
+    border-radius: 15px;
+    margin: 2vh;
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .redes div {
+    background-color: #f7e4e4;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 960px) {
+  header label {
+    display: block;
+  }
+
+  header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  menu li:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .menu li a:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .menu {
+    position: absolute;
+    background: #f38888;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li {
+    border-top: 1px solid #fff;
+  }
+
+  #btnMenu:checked ~ .menu {
+    margin: 0;
+  }
+
+  /* Titulos */
+
+  h1 {
+    color: #333333;
+    font-size: 30pt;
+    display: inline-block;
+  }
+
+  h2 {
+    color: #5e2f2f;
+    font-size: 12pt;
+    font-style: italic;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    margin: 20px 30px;
+  }
+
+  h3 {
+    color: #313235;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+
+  h4 {
+    font-size: 10pt;
+    margin-left: 30px;
+    margin-bottom: 25px;
+  }
+
+  .slideshow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 5px;
+  }
+
+  .slideshow img {
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+  }
+
+  .insumos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .insumosArt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .insumos img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .imgVela {
+    max-width: 80%;
+    height: auto;
+    grid-area: foto;
+    border-radius: 15px;
+    margin: 2vh;
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .redes div {
+    width: 100%;
+    height: auto;
+    background-color: #f7e4e4;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+  }
+}
