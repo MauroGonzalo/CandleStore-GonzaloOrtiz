@@ -1,0 +1,21 @@
+.cajasBlog {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    img {
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+    }
+    article {
+    width: 85%;
+    margin: 30px auto;
+    p {
+        text-align: justify;
+        padding: 20px;
+    }
+    }
+}

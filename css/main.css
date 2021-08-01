@@ -4,6 +4,58 @@
   padding: 0;
   box-sizing: content-box; }
 
+.insumos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .insumos img {
+    width: 150px;
+    height: 150px; }
+
+.insumosArt {
+  margin: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center; }
+  .insumosArt p {
+    text-align: justify; }
+
+@media (max-width: 414px) {
+  .insumos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .insumos img {
+    width: 150px;
+    height: 150px; }
+  .imgVela {
+    max-width: 90%;
+    height: auto;
+    grid-area: foto;
+    border-radius: 15px;
+    margin: 2vh; } }
+
+@media only screen and (min-width: 415px) and (max-width: 960px) {
+  .insumos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .insumosArt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .insumos img {
+    width: 150px;
+    height: 150px; }
+  .imgVela {
+    max-width: 80%;
+    height: auto;
+    grid-area: foto;
+    border-radius: 15px;
+    margin: 2vh; } }
+
 .preguntas {
   margin-top: 80px;
   width: 80%;
@@ -14,6 +66,33 @@
   width: max-content;
   margin-left: auto;
   margin-right: auto; }
+
+.cajasBlog {
+  display: flex;
+  flex-direction: column; }
+  .cajasBlog h2 {
+    margin-left: 50px;
+    margin-bottom: 20px; }
+  .cajasBlog img {
+    border-radius: 10px;
+    display: block;
+    margin: auto; }
+  .cajasBlog article {
+    width: 85%;
+    margin: 30px auto; }
+    .cajasBlog article p {
+      text-align: justify;
+      padding: 20px; }
+
+.container {
+  margin-top: 30px; }
+  .container img {
+    border-radius: 10px;
+    display: block;
+    margin: auto; }
+  .container .product {
+    margin-top: 20px;
+    text-align: justify; }
 
 html {
   min-height: 100%;
