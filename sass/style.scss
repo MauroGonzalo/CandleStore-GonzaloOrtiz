@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box; }
+
+@import "faq";
+@import "productos";
+@import "general";
+@import "header";
+@import "footer";
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";

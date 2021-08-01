@@ -1,0 +1,12 @@
+.cajasArticulo {
+    display: grid;
+    grid-template-areas:
+    "foto foto"
+    "prod prod"
+    "foto foto"
+    "prod prod";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 4vh;
+    grid-column-gap: 2vh;
+}
