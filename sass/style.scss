@@ -3,10 +3,14 @@
     padding: 0;
     box-sizing: content-box; }
 
+$primary-color: #f38888;
+
 @import "index";
 @import "faq";
 @import "blog";
 @import "productos";
+@import "nosotros";
+@import "contacto";
 @import "general";
 @import "header";
 @import "footer";
