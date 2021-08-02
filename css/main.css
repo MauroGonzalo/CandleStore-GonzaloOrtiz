@@ -65,20 +65,17 @@
     margin: 2vh; } }
 
 .preguntas {
-  margin-top: 80px;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: 30px auto; }
 
 .logofaq {
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto; }
+  text-align: center; }
 
 .cajasBlog {
   display: flex;
   flex-direction: column; }
   .cajasBlog h2 {
+    font-weight: bold;
     margin-left: 50px;
     margin-bottom: 20px; }
   .cajasBlog img {
@@ -107,11 +104,15 @@
     width: 90vw; } }
 
 .container {
-  margin-top: 30px; }
+  width: 80%;
+  margin: 30px auto; }
   .container img {
     border-radius: 10px;
     display: block;
-    margin: auto; }
+    margin: 30px auto; }
+  .container .titulo-producto {
+    font-size: 2rem;
+    font-weight: bold; }
   .container .product {
     margin-top: 20px;
     text-align: justify; }
@@ -121,6 +122,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px; }
+  .nosotros .titulo-nosotros {
+    font-weight: bold; }
   .nosotros p {
     margin-top: 30px;
     text-align: justify;
@@ -153,6 +156,7 @@ header {
   header .cabecera {
     width: 150px;
     font-size: 25px;
+    font-weight: bold;
     margin-left: 10px;
     margin-top: auto;
     margin-bottom: auto;
