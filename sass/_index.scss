@@ -2,7 +2,6 @@
     margin-top: 4rem;
     margin-bottom: 3rem;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     img {
     margin-bottom: 20px;
@@ -14,12 +13,12 @@
 
 .insumosArt {
     margin: 20px;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-items: center;
     p {
+        width: auto;
         text-align: justify;
     }
 }
