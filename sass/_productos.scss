@@ -1,0 +1,17 @@
+.container {
+    width: 80%;
+    margin-top: 30px;
+    img {
+        display: block;
+        border-radius: 10px;
+        margin: 30px auto;
+    }
+    .titulo-producto {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .product {
+        margin-top: 20px;
+        text-align: justify;
+    }
+}
