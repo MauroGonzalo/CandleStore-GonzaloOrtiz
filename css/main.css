@@ -75,7 +75,7 @@
   flex-direction: column; }
   .cajasBlog h2 {
     font-weight: bold;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-bottom: 20px; }
   .cajasBlog img {
     border-radius: 10px;
@@ -128,7 +128,7 @@
     text-align: justify;
     line-height: 2rem; }
   .nosotros img {
-    width: 60%;
+    width: 80%;
     border-radius: 15px;
     display: block;
     margin: 50px auto 100px; }
@@ -137,6 +137,8 @@
   margin: 40px auto;
   width: 80%;
   text-align: center; }
+  .mapa iframe {
+    width: 100%; }
 
 .formulario {
   width: 80%;
@@ -158,7 +160,7 @@ html {
   position: relative; }
 
 body {
-  background-image: url(../media/background.jpg);
+  background-image: url(../media/background.png);
   font-family: "Rubik", sans-serif;
   min-height: 100vh; }
 
